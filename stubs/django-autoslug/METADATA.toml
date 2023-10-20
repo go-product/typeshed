@@ -1,0 +1,14 @@
+version = "1.9.*"
+upstream_repository = "https://github.com/justinmayer/django-autoslug"
+extra_description = """
+django-stubs
+------------
+Typing is probably better with django-stubs installed, but this package doesn't
+depend on it, because of security restrictions within the typeshed project
+(autoslug does not depend on django-stubs and django-stubs isn't within
+typeshed).
+
+For this reason we specify the `deconstruct` and `pre_save` methods, which would
+otherwise just refer to the parent class. Several arguments refer to Django
+types, that won't help you until django-stubs is installed.
+"""
